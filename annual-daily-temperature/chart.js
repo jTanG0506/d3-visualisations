@@ -1,5 +1,5 @@
 async function drawLineChart() {
-  const dataset = await d3.json("./weather_data.json");
+  const dataset = await d3.json("./../data/weather_data.json");
 
   const dateParser = d3.timeParse("%Y-%m-%d");
   const fahrenheitToCelsius = f => (f - 32) * 5 / 9;
