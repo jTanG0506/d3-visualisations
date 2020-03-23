@@ -3,13 +3,13 @@ import datetime
 import json
 import urllib.request
 
-apikey = "d438a2b4b7665f104bd7bc938662fa20"
+apikey = "d438a2b4b7665f104bd7bc938662fa20" # Example API Key
 lat = 53.480759
 long = -2.242631
 
 data = []
 
-if apikey == "APIKEY":
+if apikey == "d438a2b4b7665f104bd7bc938662fa20":
     print("Please replace the script with your Darksky API Key - https://darksky.net/dev/account")
     sys.exit()
 
