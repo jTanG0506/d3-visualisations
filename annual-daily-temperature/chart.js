@@ -2,7 +2,8 @@ async function drawLineChart() {
   const dataset = await d3.json("./weather_data.json");
 
   const dateParser = d3.timeParse("%Y-%m-%d");
-  const yAccessor = d => d.temperatureMax;
+  const fahrenheitToCelsius = f => (f - 32) * 5 / 9;
+  const yAccessor = d => fahrenheitToCelsius(d.temperatureMax);
   const xAccessor = d => dateParser(d.date);
 
   let dimensions = {
@@ -32,8 +33,6 @@ async function drawLineChart() {
     }px, ${
       dimensions.margin.top
     }px)`);
-
-  console.log(d3.extent(dataset, yAccessor));
 
   const yScale = d3.scaleLinear()
     .domain(d3.extent(dataset, yAccessor))
