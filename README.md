@@ -8,3 +8,7 @@ Simple line plot of the maximum temperature in the last 365 days, for Manchester
 ### Dew Point vs Humidity
 Scatter graph to see the correlation between dew point and humidity. Cloud cover is also indicated by the colour of each point.
 ![Dew Point vs Humidity](./figures/dew-point-vs-humidity.svg)
+
+### Frequency Distribution
+Histogram that plots a given metric against its frequency. Example: Maximum Temperature.
+![Maximum Temperature Distribution](./figures/temperature-max-distribution.svg)
