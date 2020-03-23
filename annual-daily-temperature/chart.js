@@ -49,7 +49,7 @@ async function drawLineChart() {
   const line = bounds.append("path")
     .attr("d", lineGenerator(dataset))
     .attr("fill", "none")
-    .attr("stroke", "#af9358")
+    .attr("stroke", "#7F33FF")
     .attr("stroke-width", 2);
 
   const yAxisGenerator = d3.axisLeft().scale(yScale);
